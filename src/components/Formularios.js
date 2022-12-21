@@ -62,7 +62,7 @@ function Formulario() {
           <input
            placeholder='clave '
            className='from-control'
-           type="password"
+           
            name="calve"
            onChange={registros} >
            </input>
@@ -83,7 +83,8 @@ function Formulario() {
           <div className="">
           <button className='btn btn-primary' type='submit'>Registrame</button>
           </div>
-
+ 
+          
 
        </form>
        
