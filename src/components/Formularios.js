@@ -6,7 +6,6 @@ function Formulario() {
   
   const [Relaciones,setDatos] =useState({
     nombre: ``,
-    apellido: ``,
     gustos:``,
     clave:``,
     correo:``
@@ -23,12 +22,13 @@ function Formulario() {
   }
   
   return (
-< div className = "container">
+< form class = "formulario">
    <Fragment>
-       <h1>Registro</h1>
-       <form className='row'>
+        <h1>Regristrate</h1>
+        
+        <div class="contenedor">
 
-         <div className="">
+         <div class='input-contenedor'>
           <input placeholder='Ingrese Nombre'
           className='from-control'
           type= "text"  
@@ -37,18 +37,9 @@ function Formulario() {
           </input>
           </div>
         
-          <div className="">
-          <input
-           placeholder='Ingrese Apellido '
-           className='from-control'
-           type="text"
-           name="apellido"
-           onChange={registros}>
-           </input>
-          </div>
+        
 
-
-          <div className="">
+          <div class="input-contenedor">
           <input
            placeholder='Ingrese Tus Gustos '
            className='from-control'
@@ -58,19 +49,22 @@ function Formulario() {
            </input>
           </div>
 
-          <div className="">
+          <div class="input-contenedor">
           <input
            placeholder='clave '
            className='from-control'
-           
            name="calve"
+           type="password"
            onChange={registros} >
            </input>
           </div> 
 
 
+
+
+
           
-          <div className="">
+          <div class="input-contenedor">
           <input
            placeholder='Ingrese correo '
            className='from-control'
@@ -80,18 +74,18 @@ function Formulario() {
            </input>
           </div> 
 
-          <div className="">
-          <button className='btn btn-primary' type='submit'>Registrame</button>
-          </div>
- 
           
+       <input type="submit" value="Registrate " class="button">
+       </input>
+ 
+         <p> Acepta nuentros Terminos de politica y seguridad.</p> 
 
-       </form>
        
-    
+       
+         </div>
     
     </Fragment>
-   </div>
+   </form>
   );
 }
 
