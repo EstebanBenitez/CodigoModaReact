@@ -10,17 +10,17 @@ body {
 
 .contenedor{
     width: 100%;
-    padding: 10px;
+    padding: 15px;
 }
 
 
  
 
     
-.loguin{
+.formulario{
     background-color: #003057;
-    margin-top: 80px;
-    padding:20PX;
+    margin-top: 100px;
+    padding:30PX;
 }
 
 h1{
@@ -29,8 +29,9 @@ h1{
     font-size:25px;
 }
 
-input[type="clave"],
-input[type="correo"]
+input[type="text"],
+input[type="password"],
+input[type="email"]
 {
     font-size:13px;
     width:100%;
@@ -40,8 +41,8 @@ input[type="correo"]
 }
 
 .input-contenedor{
-    margin-bottom: 10px;
-    border: 50px ;
+    margin-bottom: 16px;
+    border: 40px ;
 }
 
 
