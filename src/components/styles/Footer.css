@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    bottom: 0;
+    bottom: 0 auto;
 }
 
 .Smapa{
@@ -19,15 +19,15 @@
 }
 
 .Sfooter div{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 30%;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    width: 20%;
     margin: 0 auto;
     text-align: center;
 }
 
 .Sfooter img{
-    width: 80%;
+    width: 100%;
 }
 
 .Sfooter h3 {
@@ -35,7 +35,7 @@
   font-size: 1.75em;
   color: #00B8D4;
   letter-spacing: 1px;
-  margin-bottom: 18px;
+  margin-bottom: 100px;
 }
 
 .Smapa a{
@@ -43,6 +43,7 @@
 }
 
 .Sfooter p{
-    margin-top: 15px;
+    margin-top: 10px;
     color: #ffffff;
 }
+

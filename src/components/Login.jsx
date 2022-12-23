@@ -2,7 +2,7 @@
 
 import React ,{Fragment,useState} from 'react';
 
-function Loguin() {
+function Login() {
   
     const [Relaciones,setDatos] =useState({
       
@@ -67,4 +67,4 @@ function Loguin() {
           );
         }
         
-        export default Loguin;
+        export default Login;

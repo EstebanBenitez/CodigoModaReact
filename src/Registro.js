@@ -2,10 +2,12 @@
 import React from 'react'
 import Formulario from './components/Formularios';
 import Header from './Partials/Header';
-//import Login from './components/Loguin';
-import Home from "./components/Home"
+import  './components/styles/Formulario.css';
+import  './components/styles/Header.css';
 
-function App() {
+
+
+function Registro() {
     return (
       <div>
         <>
@@ -19,4 +21,4 @@ function App() {
 
 
 
-export default App;
+export default Registro;

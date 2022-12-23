@@ -1,16 +1,19 @@
 import React from "react";
+import logo from './../assets/img/logo.png';
 
 
 function  Footer(){
     return(
 <>
-    
+
+<footer class="Sfooter">
+    <div>
+    <img src={logo} width="150px" alt="Logo"></img>
+    </div>
     <div class="Smapa">
         <h3>Mapa del sitio</h3>
-        <a href="">Instrucciones</a>
-        <a href=""> Inscribe tu grupo</a>
-        <a href="">Inscríbete</a>
-        <a href="">Listado de grupos</a>
+        <a href="">Iniciar sesión</a>
+        <a href="">Registrarse</a>
     </div>
     <div>
        <h3>Datos de contacto</h3>
@@ -18,9 +21,8 @@ function  Footer(){
        <p><strong>Email: </strong>atencion@lineadirecta.com</p>
        <p><strong>Teléfono: </strong> +57 6044485533</p>
     </div>
-</> 
-
-
+</footer> 
+</>
     )
 }
 
