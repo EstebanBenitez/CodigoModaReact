@@ -1,28 +1,25 @@
 import React from 'react'
 
-import Formulario from '../components/Formularios';
+import MiembrosAdmin from '../components/MiembrosAdmin';
 
 import Header from '../Partials/Header';
 import Footer from '../Partials/Footer';
 
 import '../components/styles/Header.css';
 import '../components/styles/Footer.css';
-import '../components/styles/Formulario.css';
+import '../components/styles/Login.css';
 
 
-function registro() {
+function miembrosAdmin() {
     return (
       <div>
         <>
           <Header />
-          <Formulario />
+          <MiembrosAdmin />
           <Footer />
         </>
       </div>
   )
 }
 
-
-
-
-export default registro;
+export default miembrosAdmin;

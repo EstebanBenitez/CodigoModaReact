@@ -1,21 +1,24 @@
 import React from 'react'
-import Header from '../Partials/Header';
-import  '../components/styles/Header.css';
-import Loguin from '../components/Login';
-import  '../components/styles/Login.css';
 
-function Login() {
+import Login from '../components/Login';
+
+import Header from '../Partials/Header';
+import Footer from '../Partials/Footer';
+
+import '../components/styles/Header.css';
+import '../components/styles/Footer.css';
+import '../components/styles/Login.css';
+
+function login() {
     return (
       <div>
         <>
-          <Header/>
-          <Loguin/>
+          <Header />
+          <Login />
+          <Footer />
         </>
       </div>
   )
 }
 
-
-
-
-export default Login;
+export default login;

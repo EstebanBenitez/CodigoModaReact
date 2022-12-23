@@ -7,8 +7,8 @@ function Header(){
         <header>
             <img src={logo} width="150px" alt="Logo"></img>
             <nav class="Snavbar">
-                <a href=""> Iniciar sesión </a>
-                <a href=""> Registrarse </a>
+                <a href> Iniciar sesión </a>
+                <a href> Registrarse </a>
             </nav> 
         </header>
       </>
