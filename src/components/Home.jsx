@@ -1,4 +1,7 @@
-export const Home = () => {
+import React from "react";
+
+
+function Home ()  {
 
      return (
         <>
@@ -22,6 +25,6 @@ export const Home = () => {
 ;
 
 
-
+export default Home;
 
 
