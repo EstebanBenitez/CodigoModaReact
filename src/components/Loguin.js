@@ -20,7 +20,11 @@ function Loguin() {
   
     }
     return (
+      
+        
         < form class = "formulario">
+
+          
            <Fragment>
                 <h1>Iniciar sesión </h1>
                 

@@ -1,24 +1,23 @@
 import React from "react";
-
+import logo from './../assets/img/LD.jpg';
 
 function Header(){
       return(
     <>
-     
-   
-          <div className="boton">
-          <button className='btn btn-primary' type='submit'>Registrame</button>
-          </div>
+    
 
 
-          <div className="boton">
-          <button className='btn btn-primary' type='submit'>ingresar</button>
-          </div>   
+     <header>
+     <img src={logo} width="70px"></img>
+    <nav class="Snavbar">
+        <a href=""> Ingresar </a>
+        <a href=""> Registrar </a>
+       
+        
+    </nav> 
+</header>
 
-
-          <div className="boton">
-          <button className='btn btn-primary' type='submit'>Iniciar Sesion</button>
-          </div>
+          
 
 
            

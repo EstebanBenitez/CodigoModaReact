@@ -11,6 +11,7 @@ body {
 .contenedor{
     width: 100%;
     padding: 15px;
+    
 }
 
 
@@ -21,6 +22,7 @@ body {
     background-color: #003057;
     margin-top: 100px;
     padding:30PX;
+    border-radius: 10px;
 }
 
 h1{
@@ -37,6 +39,7 @@ input[type="email"]
     width:100%;
     padding: 15px;
     border: none;
+    border-radius: 8px;
 
 }
 
@@ -57,6 +60,7 @@ input[type="email"]
     cursor: pointer;
     margin: 5px;
     bottom: unset;
+    align-items: center;
 }
 
 
