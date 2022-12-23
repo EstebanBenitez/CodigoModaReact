@@ -31,7 +31,7 @@ function Login() {
                 <div class="contenedor">
         
                 
-                  <div class="input-contenedor">
+                  <div class="contenedor">
                   <input
                    placeholder='Ingrese correo '
                    className='from-control'
@@ -41,7 +41,7 @@ function Login() {
                    </input>
                   </div> 
         
-                  <div class="input-contenedor">
+                  <div class="contenedor">
                   <input
                    placeholder='clave '
                    className='from-control'

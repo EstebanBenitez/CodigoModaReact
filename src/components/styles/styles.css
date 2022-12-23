@@ -10,6 +10,7 @@ body{
     color: white;
     padding-top: 15%;
     text-align: center;
+    
 }
 
 .derecha{
@@ -28,6 +29,19 @@ body{
 .h2 {
     font-size: 30px;
 }
+
+
+.input-grupo{
+    width: 400px;
+}
+
+
+.input-index-group{
+    width: 380px;
+}
+
+
+
 
 label{
     font-size: 20px;

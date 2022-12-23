@@ -15,7 +15,7 @@ function Home ()  {
             <div class="derecha">
                 <h2>¿No tienes un grupo? Crealo.</h2>
                 <label>Nombre del grupo:</label>
-                <input class="input-index-crear-grupo" type="text" data-label="crear-grupo" name="crear-grupo"></input>
+                <input class="input-grupo" type="text" data-label="crear-grupo" name="crear-grupo"></input>
                 <button class="bCrear" href="">Crear Grupo</button>
             </div>
         </section>

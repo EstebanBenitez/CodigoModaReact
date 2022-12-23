@@ -29,9 +29,7 @@ h1{
     font-size:25px;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"]
+.control
 {
     font-size:13px;
     width:100%;
