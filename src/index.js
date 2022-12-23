@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './Partials/Header';
+import Footer from './Partials/Footer';
 import  './components/styles/Header.css';
 import  './components/styles/Formulario.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -16,7 +16,7 @@ import  './components/styles/Footer.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Header/>
+    <App/>
   </React.StrictMode>
 );
 

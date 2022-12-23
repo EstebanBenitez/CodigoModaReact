@@ -1,6 +1,10 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React ,{Fragment,useState} from 'react'
+import React ,{Fragment,useState} from 'react';
+import Header from "../Partials/Header"
+
+<Header />
+
 
 function Formulario() {
   
@@ -24,7 +28,7 @@ function Formulario() {
   return (
 < form class = "formulario">
    <Fragment>
-        <h1>Regristrate</h1>
+        <h1>Registrate</h1>
         
         <div class="contenedor">
 
@@ -53,7 +57,7 @@ function Formulario() {
           <input
            placeholder='clave '
            className='from-control'
-           name="calve"
+           name="clave"
            type="password"
            onChange={registros} >
            </input>
@@ -77,7 +81,8 @@ function Formulario() {
           
        <input type="submit" value="Registrate " class="button">
        </input>
- 
+
+        <input type="checkbox"></input>
          <p> Acepta nuentros Terminos de politica y seguridad.</p> 
 
        

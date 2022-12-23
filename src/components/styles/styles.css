@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.izquierda {
+    background: #003057;
+    height: 100vh;
+    width: 50%;
+    color: white;
+    padding-top: 15%;
+    text-align: center;
+}
+
+.derecha{
+    background: white;
+    height: 100vh;
+    width: 50%;
+    color: #003057;
+    padding-top: 15%;
+    text-align: center;
+}
+
+#pantalla-dividida{
+    display: flex;
+}
+
+.h2 {
+    font-size: 30px;
+}
+
+label{
+    font-size: 20px;
+}
+
+#contenedor{
+    border-width: 2px;
+    border-style: solid;
+    border-color: #003057;
+    border-radius: 5px;
+    background: white;
+    width: 50%;
+    height: auto;
+    padding: 5px;
+}
+
+.amigos{
+   position: relative;
+   top: 30px;
+
+}
+
+#pantalla-d-grupo{
+    display: flex;
+}
+
+.izquierda-grupo{
+    width: 50%;
+}
+
+.derecha-grupo{
+    width: 50%;
+    padding-left: 20px;
+}
+
+.descripción{
+    width: 350px;
+    height: 68px;
+    position:relative;
+    margin-left: 50px;
+
+}
+
+.fecha{
+    font-size: 13px;
+}
+
+textarea {
+    resize: none;
+}
+
+
+
