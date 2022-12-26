@@ -53,8 +53,7 @@ function Login() {
         
 
                   
-               <input type="submit" value="Registrate " class="button">
-               </input>
+                  <button className="btn btn-primary btn-">Ingresar</button>
          
                  <p> Acepta nuentros Terminos de politica y seguridad.</p> 
         

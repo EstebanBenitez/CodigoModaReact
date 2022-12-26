@@ -1,10 +1,6 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React ,{Fragment,useState} from 'react';
-import Header from "../Partials/Header"
-
-<Header />
-
 
 function Formulario() {
   
@@ -33,7 +29,7 @@ function Formulario() {
         <div class="contenedor">
 
          <div class='input-contenedor'>
-          <input placeholder='Ingrese Nombre'
+          <input placeholder='Nombre'
           className='from-control'
           type= "text"  
            name="nombre" 
@@ -44,18 +40,18 @@ function Formulario() {
         
 
           <div class="input-contenedor">
-          <input
-           placeholder='Ingrese Tus Gustos '
+           <textarea
+           placeholder='Gustos y Disgustos '
            className='from-control'
            type="text"
            name="gustos"
            onChange={registros}>
-           </input>
+           </textarea>
           </div>
 
           <div class="input-contenedor">
           <input
-           placeholder='clave '
+           placeholder='Clave '
            className='from-control'
            name="clave"
            type="password"
@@ -70,20 +66,18 @@ function Formulario() {
           
           <div class="input-contenedor">
           <input
-           placeholder='Ingrese correo '
+           placeholder='Correo '
            className='from-control'
            type="email"
            name="email"
            onChange={registros}>
            </input>
           </div> 
+   
+      <button className="btn btn-primary btn-">Registro</button>
+       
 
-          
-       <input type="submit" value="Registrate " class="button">
-       </input>
-
-        <input type="checkbox"></input>
-         <p> Acepta nuentros Terminos de politica y seguridad.</p> 
+        
 
        
        
