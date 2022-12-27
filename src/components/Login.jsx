@@ -52,12 +52,15 @@ function Login() {
                   </div> 
         
 
-                  
+                  <div class="d-grid gap-3 col-8 mx-auto">
                   <button className="btn btn-primary btn-">Ingresar</button>
-         
-                 <p> Acepta nuentros Terminos de politica y seguridad.</p> 
-        
-               
+                  </div>
+                  
+
+                   <span>
+                    ¿ No Tienes Cuenta? &nbsp;
+                      <a href='#'>registrate</a>
+                 </span>
                
                  </div>
             
@@ -66,4 +69,6 @@ function Login() {
           );
         }
         
-        export default Login;
+        export default Login; 
+
+        

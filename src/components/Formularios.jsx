@@ -74,9 +74,15 @@ function Formulario() {
            </input>
           </div> 
    
-      <button className="btn btn-primary btn-">Registro</button>
-       
+                <div class="d-grid gap-3 col-8 mx-auto">
+                  <button className="btn btn-primary btn-">Registro</button>
+                  </div>
+                  
 
+                   <span>
+                    ¿ Ya Tienes Cuenta? &nbsp;
+                      <a href='#'>Ingresar</a>
+                 </span>
         
 
        

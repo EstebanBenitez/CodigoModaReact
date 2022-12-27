@@ -1,10 +1,20 @@
 import React from "react";
+import { Row } from "react-bootstrap";
 
 
 function Home ()  {
 
      return (
         <>
+    
+       <div class="d-grid gap-3 btn-sm tex-end">
+                  <button className="btn btn-primary btn-">Ingresar</button>
+                  </div>
+                  
+                  <div class="d-grid gap-3 btn-sm ">
+                  <button className="btn btn-primary btn-">Registrar </button>
+                  </div>
+                  
         <section id="pantalla-dividida">
             <div class="izquierda">
                 <h2>¿Ya tienes un grupo al que perteneces?</h2>
