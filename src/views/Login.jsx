@@ -1,6 +1,6 @@
-
-
 import React ,{Fragment,useState} from 'react';
+import "../components/styles/Login.css";
+import {Link} from "react-router-dom"
 
 function Login() {
   
@@ -20,11 +20,7 @@ function Login() {
   
     }
     return (
-      
-        
         < form class = "formulario">
-
-          
            <Fragment>
                 <h1>Iniciar sesión </h1>
                 
@@ -59,7 +55,7 @@ function Login() {
 
                    <span>
                     ¿ No Tienes Cuenta? &nbsp;
-                      <a href='#'>registrate</a>
+                      <a href='/register'>registrate</a>
                  </span>
                
                  </div>

@@ -1,10 +1,15 @@
 import React from "react";
-
+import "../components/styles/styles.css"
+import {Link} from "react-router-dom"
 
 function Miembros () {
 
   return (
 <>
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <Link to={"/"} className="btn btn-primary mt-3 px-5" type="button">Regresar</Link>
+  
+</div>
 <section id="pantalla-d-grupo">
   <div class="izquierda-grupo">
     <h4>Estas en el grupo: Los Carteleros</h4>

@@ -1,19 +1,17 @@
 import React from "react";
-import { Row } from "react-bootstrap";
-
+import "../components/styles/styles.css";
+import {Link} from "react-router-dom"
 
 function Home ()  {
 
      return (
         <>
     
-       <div class="d-grid gap-3 btn-sm tex-end">
-                  <button className="btn btn-primary btn-">Ingresar</button>
-                  </div>
-                  
-                  <div class="d-grid gap-3 btn-sm ">
-                  <button className="btn btn-primary btn-">Registrar </button>
-                  </div>
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <Link to={"/login"} className="btn btn-primary mt-3 px-5" type="button">Ingresar</Link>
+    <Link to={"/register"} className="btn btn-primary mt-3 px-5" type="button">Registrar</Link>
+  
+</div>
                   
         <section id="pantalla-dividida">
             <div class="izquierda">

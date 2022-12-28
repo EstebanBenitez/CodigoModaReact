@@ -1,6 +1,7 @@
-
+import "../components/styles/Formulario.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React ,{Fragment,useState} from 'react';
+import {Link} from "react-router-dom"
 
 function Formulario() {
   
@@ -22,8 +23,10 @@ function Formulario() {
   }
   
   return (
+    
 < form class = "formulario">
    <Fragment>
+   
         <h1>Registrate</h1>
         
         <div class="contenedor">
@@ -81,7 +84,7 @@ function Formulario() {
 
                    <span>
                     ¿ Ya Tienes Cuenta? &nbsp;
-                      <a href='#'>Ingresar</a>
+                      <a href='/login'>Ingresar</a>
                  </span>
         
 
