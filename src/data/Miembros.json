@@ -1,0 +1,43 @@
+[  
+    {
+        "nombre":"Juan Sebatian Duque ",
+        "Gustos y Disgustos":"Me gusta las papitas, No me gusta el chocolate ",
+        "clave":"null",
+        "Correo":"Juansebas@gmail.com"
+      
+    },
+    
+    {
+        "nombre":"Carmensa Rios ",
+        "Gustos y Disgustos":"Me gusta El chocolate , No me Gusta la Gaseosa ",
+        "clave":"null",
+        "Correo":"carmensar@hotmail.com"
+    },
+
+    {
+        "nombre":"Jonh Esteban Ramos ",
+        "Gustos y Disgustos":"Me gusta El mani , No me gusta El Chocorramo ",
+        "clave":"null",
+        "Correo":"jhonsito23@gmail.com"
+      
+    },
+
+    {
+        "nombre":"Maria Camila Muñoz Munera",
+        "Gustos y Disgustos":"Me Gusta mUcho La Torta, No me gusta las gomitas ",
+        "clave":"null",
+        "Correo": "camilita345@gmail.com"
+      
+    },
+      
+      
+    {
+        "nombre":"Cruz Helena Mesa ",
+        "Gustos y Disgustos":"Me gusta las Frutas , No me gusta las papitas fritas  ",
+        "clave":"null",
+        "Correo": "cruzhelena@gmail.com"
+      
+    }
+
+  
+]
