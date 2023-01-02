@@ -1,27 +1,21 @@
-
-
 import fetch from  'react';
 import React, { useEffect, useState } from 'react';
+import data from '../data/Miembros.json';
 import ItemMember from './ItemMember';
 
-function  ListMembers ()  {
+
+function  useMembers ()  {
   
-      const [miembros, setMiembros] = useState([])
+      const [miembros] = useState(data)
 
-      useEffect(()=>{
-         fetch("data\Miembros.json")
-         .then(response=>response.json())
-         .then(datos=>{
-            setMiembros(datos)
-         })
-      },[])
-
+      console.log(miembros);
+      
       return miembros
 }
 
 
-export default function ListMembers(){
-   const miembros = ListMembers()
+export default function ListMembers() {
+   const miembros = useMembers()
    return (
    
    
@@ -31,19 +25,15 @@ export default function ListMembers(){
  
         {
  
-           miembros.map(item => {
-              return  <ItemMember/>
-           })
-        }
- 
- 
- 
- 
-       
+           miembros.map((item, i)  => {
+              return  <ItemMember key={i} {...item}/> 
+        })
+      }
    </div>
     
  </div>
 
-   )
+)
+   
    
 };
