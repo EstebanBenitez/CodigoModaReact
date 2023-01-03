@@ -27,7 +27,7 @@ export const SearchGroup = () => {
             className="form-control"
             aria-label="Small" 
             aria-describedby="Small"
-
+            placeholder="Nombre del grupo"
         />
         <button onClick={ onInputChange } className="btn btn-secondary mt-3">Ingresar</button>
         </form>
