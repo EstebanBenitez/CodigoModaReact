@@ -1,5 +1,4 @@
-import fetch from  'react';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import data from '../data/Miembros.json';
 import ItemMember from './ItemMember';
 

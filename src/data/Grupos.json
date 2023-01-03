@@ -1,0 +1,29 @@
+[
+    {
+        "id": "1",
+        "nombre": "Los Carteleros",
+        "descripcion": "Grupo de amigo secreto de la bodega de Hacienda Escocia del area de TI (Programación)",
+        "calendario":["Lunes 25 de Enero, Endulzada", "Lunes 30 de Enero, Descubrimiento"]
+    },
+
+    {
+        "id": "2",
+        "nombre": "Los Guanabanos",
+        "descripcion": "Grupo de amigo secreto de la bodega de Hacienda Escocia del area de nómina",
+        "calendario":["Lunes 25 de Enero, Endulzada", "Lunes 30 de Enero, Descubrimiento"]
+    },
+
+    {
+        "id": "3",
+        "nombre": "Los de arriba",
+        "descripcion": "Grupo de amigo secreto de la bodega de Hacienda Escocia del area del call center de Loguin",
+        "calendario":["Lunes 25 de Enero, Endulzada", "Lunes 30 de Enero, Descubrimiento"]
+    },
+
+    {
+        "id": "4",
+        "nombre": "Los de al frente",
+        "descripcion": "Grupo de amigo secreto de la bodega Escocia del area del corte",
+        "calendario":["Lunes 25 de Enero, Endulzada", "Lunes 30 de Enero, Descubrimiento"]
+    }
+]

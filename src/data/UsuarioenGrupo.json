@@ -1,0 +1,67 @@
+[
+    {
+        "IdGrupo": 1,
+        "IdUser": 1,
+        "Secret": ""
+    },
+
+    {
+        "IdGrupo": 1,
+        "IdUser": 2,
+        "Secret": ""
+    },
+
+    {
+        "IdGrupo": 1,
+        "IdUser": 3,
+        "Secret": ""
+    },
+
+    {
+        "IdGrupo": 2,
+        "IdUser": 4,
+        "Secret": ""
+    },
+
+    {
+        "IdGrupo": 2,
+        "IdUser": 5,
+        "Secret": ""
+    },
+
+    {
+        "IdGrupo": 2,
+        "IdUser": 6,
+        "Secret": ""
+    },
+
+    {
+        "IdGrupo": 3,
+        "IdUser": 8,
+        "Secret": ""
+    },
+
+    {
+        "IdGrupo": 3,
+        "IdUser": 9,
+        "Secret": ""
+    },
+
+    {
+        "IdGrupo": 4,
+        "IdUser": 10,
+        "Secret": ""
+    },
+
+    {
+        "IdGrupo": 4,
+        "IdUser": 11,
+        "Secret": ""
+    },
+
+    {
+        "IdGrupo": 4,
+        "IdUser": 12,
+        "Secret": ""
+    }
+]

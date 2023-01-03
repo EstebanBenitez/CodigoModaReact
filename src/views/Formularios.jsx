@@ -1,7 +1,7 @@
 import "../components/styles/Formulario.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React ,{Fragment,useState} from 'react';
-import {Link} from "react-router-dom"
+
 
 function Formulario() {
   
@@ -24,14 +24,14 @@ function Formulario() {
   
   return (
     
-< form class = "formulario">
+< form className = "formulario">
    <Fragment>
    
         <h1>Registrate</h1>
         
-        <div class="contenedor">
+        <div className ="contenedor">
 
-         <div class='input-contenedor'>
+         <div className ='input-contenedor'>
           <input placeholder='Nombre'
           className='from-control'
           type= "text"  
@@ -42,7 +42,7 @@ function Formulario() {
         
         
 
-          <div class="input-contenedor">
+          <div className ="input-contenedor">
            <textarea
            placeholder='Gustos y Disgustos '
            className='from-control'
@@ -52,7 +52,7 @@ function Formulario() {
            </textarea>
           </div>
 
-          <div class="input-contenedor">
+          <div className ="input-contenedor">
           <input
            placeholder='Clave '
            className='from-control'
@@ -77,7 +77,7 @@ function Formulario() {
            </input>
           </div> 
    
-                <div class="d-grid gap-3 col-8 mx-auto">
+                <div className="d-grid gap-3 col-8 mx-auto">
                   <button className="btn btn-primary btn-">Registro</button>
                   </div>
                   

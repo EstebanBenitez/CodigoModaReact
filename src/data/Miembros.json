@@ -1,41 +1,133 @@
 [  
-    {
+    {   
+        "id": 1,
+        "grupo": 1,
+        "rol": 0,
         "nombre":"Juan Sebatian Duque ",
         "gustos":"Me gusta las papitas, No me gusta el chocolate ",
         "clave":"null",
-        "Correo":"Juansebas@gmail.com"
+        "correo":"Juansebas@gmail.com"
+      
+    },
+    
+    {   
+        "id": 2,
+        "grupo": 1,
+        "rol": 1,
+        "nombre":"Carmensa Rios ",
+        "gustos":"Me gusta El chocolate , No me Gusta la Gaseosa ",
+        "clave":"null",
+        "correo":"carmensar@hotmail.com"
+    },
+
+    {   
+        "id": 3,
+        "grupo": 1,
+        "rol": 1,
+        "nombre":"Jonh Esteban Ramos ",
+        "gustos":"Me gusta El mani , No me gusta El Chocorramo ",
+        "clave":"null",
+        "correo":"jhonsito23@gmail.com"
+      
+    },
+
+    {   
+        "id": 4,
+        "grupo": 2,
+        "rol": 0,
+        "nombre":"Maria Camila Muñoz Munera",
+        "gustos":"Me Gusta mUcho La Torta, No me gusta las gomitas ",
+        "clave":"null",
+        "correo": "camilita345@gmail.com"
+      
+    },
+      
+      
+    {   
+        "id": 5,
+        "grupo": 2,
+        "rol": 1,
+        "nombre":"Cruz Helena Mesa ",
+        "gustos":"Me gusta las Frutas , No me gusta las papitas fritas  ",
+        "clave":"null",
+        "correo": "cruzhelena@gmail.com"
+      
+    },
+    
+    {   
+        "id": 6,
+        "grupo": 2,
+        "rol": 1,
+        "nombre":"Sebatian Quintero ",
+        "gustos":"Me gusta las papitas, No me gusta el chocolate ",
+        "clave":"null",
+        "correo":"sebasq@gmail.com"
       
     },
     
     {
-        "nombre":"Carmensa Rios ",
+        "id": 7,
+        "grupo": 3,
+        "rol": 0,
+        "nombre":"Sara Rios ",
         "gustos":"Me gusta El chocolate , No me Gusta la Gaseosa ",
         "clave":"null",
-        "Correo":"carmensar@hotmail.com"
+        "correo":"sara@hotmail.com"
     },
 
-    {
-        "nombre":"Jonh Esteban Ramos ",
+    {   
+        "id": 8,
+        "grupo": 3,
+        "rol": 1,
+        "nombre":"Mauricio Ramos ",
         "gustos":"Me gusta El mani , No me gusta El Chocorramo ",
         "clave":"null",
-        "Correo":"jhonsito23@gmail.com"
+        "correo":"mauricio@gmail.com"
       
     },
 
-    {
-        "nombre":"Maria Camila Muñoz Munera",
+    {   
+        "id": 9,
+        "grupo": 3,
+        "rol": 1,
+        "nombre":"Camila Munera",
         "gustos":"Me Gusta mUcho La Torta, No me gusta las gomitas ",
         "clave":"null",
-        "Correo": "camilita345@gmail.com"
+        "correo": "camila@gmail.com"
       
     },
       
       
-    {
-        "nombre":"Cruz Helena Mesa ",
+    {   
+        "id": 10,
+        "grupo": 4,
+        "rol": 0,
+        "nombre":"Helena Gonzales ",
         "gustos":"Me gusta las Frutas , No me gusta las papitas fritas  ",
         "clave":"null",
-        "Correo": "cruzhelena@gmail.com"
+        "correo": "helena@gmail.com"
+      
+    },
+
+    {   
+        "id": 11,
+        "grupo": 4,
+        "rol": 1,
+        "nombre":"Juliana Gonzales ",
+        "gustos":"Me gusta las Frutas , No me gusta las papitas fritas  ",
+        "clave":"null",
+        "correo": "Juliana@gmail.com"
+      
+    },
+
+    {   
+        "id": 12,
+        "grupo": 4,
+        "rol": 1,
+        "nombre":"Ximena Gomez ",
+        "gustos":"Me gusta las Frutas , No me gusta las papitas fritas  ",
+        "clave":"null",
+        "correo": "Juliana@gmail.com"
       
     }  
 ]

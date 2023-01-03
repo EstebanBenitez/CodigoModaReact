@@ -1,6 +1,6 @@
 import React ,{Fragment,useState} from 'react';
 import "../components/styles/Login.css";
-import {Link} from "react-router-dom"
+
 
 function Login() {
   
@@ -20,14 +20,14 @@ function Login() {
   
     }
     return (
-        < form class = "formulario">
+        < form className = "formulario">
            <Fragment>
                 <h1>Iniciar sesión </h1>
                 
-                <div class="contenedor">
+                <div className ="contenedor">
         
                 
-                  <div class="contenedor">
+                  <div className ="contenedor">
                   <input
                    placeholder='Ingrese correo '
                    className='from-control'
@@ -37,7 +37,7 @@ function Login() {
                    </input>
                   </div> 
         
-                  <div class="contenedor">
+                  <div className ="contenedor">
                   <input
                    placeholder='clave '
                    className='from-control'
@@ -48,7 +48,7 @@ function Login() {
                   </div> 
         
 
-                  <div class="d-grid gap-3 col-8 mx-auto">
+                  <div className="d-grid gap-3 col-8 mx-auto">
                   <button className="btn btn-primary btn-">Ingresar</button>
                   </div>
                   
