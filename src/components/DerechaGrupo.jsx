@@ -1,13 +1,22 @@
 import {Link} from "react-router-dom";
 
+
 export default function DerechaGrupo () {
 
     return (
-    
-        <div className="derecha-grupo d-flex flex-row w-100">
-        <textarea autoCapitalize="characters" placeholder="Descripción del grupo" className="descripción p-2 w-100%"></textarea>
-        <div className="p-2">
-        <Link to={"/"} className="btn btn-primary mt-3 px-3" type="button">Agregar</Link>
-        </div>
-        </div>
+      
+      
+       <div class="card border-primary  d-grid gap-2 d-md-flex justify-content-md-end">
+       <div class="card-body text-primary">
+       <p class="card-text">Descripcion Del grupo </p>
+       <div className="p-2">
+       <Link to={"/"} className="btn btn-primary mt-3 px-3" type="button">Agregar</Link>
+       </div>
+       </div>
+       </div>
+
+        
     )}
+
+
+    
