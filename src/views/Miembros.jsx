@@ -19,7 +19,7 @@ function Miembros () {
 <ListMembers/>
 
 
-<Container>
+<Container className="pt-4 fs-5 t ">
 
     <h4>Fechas Especiales:</h4>
     <div id="contenedor">
