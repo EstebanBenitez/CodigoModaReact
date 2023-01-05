@@ -3,6 +3,7 @@ import "../components/styles/styles.css"
 import {Link} from "react-router-dom"
 import ListMembers from "../components/ListMembers";
 import { IzquierdaGrupo } from "../components/IzquierdaGrupo";
+import { Container } from "react-bootstrap";
 
 function Miembros () {
 
@@ -15,20 +16,18 @@ function Miembros () {
 <section id="pantalla-d-grupo">
   <IzquierdaGrupo/>
 </section>
-
-<br /><br /><br />
 <ListMembers/>
-<br /><br /><br />
 
-<section>
-       
+
+<Container>
+
     <h4>Fechas Especiales:</h4>
     <div id="contenedor">
         <h5>Primera endulzada</h5>
         <p type="date" className ="fecha">22 de diciembre </p> 
     </div>
-
-</section>
+    
+</Container>
 
 </>
 )
