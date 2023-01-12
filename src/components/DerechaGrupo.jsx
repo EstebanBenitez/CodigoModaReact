@@ -20,8 +20,7 @@ export default function DerechaGrupo () {
        
     )}
 
-
-    <div class="card border-dark mb-3" style="max-width: 18rem;">
+<div class="card border-dark mb-3">
   <div class="card-header">Header</div>
   <div class="card-body">
     <h5 class="card-title">Dark card title</h5>

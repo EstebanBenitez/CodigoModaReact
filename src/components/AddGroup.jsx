@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 export const AddGroup = () => {
-    
+
     const [inputValue, setInputValue] = useState();
     
     const onInputChange = ( { target } ) => {
@@ -16,7 +16,7 @@ export const AddGroup = () => {
     }
     
     return (
-        <div className="derecha">
+        <div className="derecha">  
         <form action="/group/register" onSubmit={( event ) => onSubmit (event)}>
         <h2>¿No tienes un grupo? Crealo.</h2>
         <label>Nombre del grupo:</label>

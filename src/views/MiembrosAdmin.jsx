@@ -3,13 +3,12 @@ import BotonesGrupo  from "../components/BotonesGrupo";
 import  ListMembers  from "../components/ListMembers";
 import DerechaGrupo from "../components/DerechaGrupo";
 import { IzquierdaGrupo } from "../components/IzquierdaGrupo";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const MiembrosAdmin = () => {
 
   return (
 <>
-
         <BotonesGrupo />
 
 <section id="pantalla-d-grupo">

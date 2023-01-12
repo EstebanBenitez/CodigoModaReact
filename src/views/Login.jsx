@@ -39,9 +39,9 @@ function Login() {
         
                   <div className ="contenedor">
                   <input
-                   placeholder='clave '
+                   placeholder='Clave'
                    className='from-control'
-                   name="calve"
+                   name="clave"
                    type="password"
                    onChange={registros} >
                    </input>
