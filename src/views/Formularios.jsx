@@ -1,7 +1,7 @@
 import "../components/styles/Formulario.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React, { Fragment, useEffect, useState } from 'react';
-import usuarios from '../data/registro.json';
+import React, { Fragment, useState } from 'react';
+
 
 
 function Formulario() {
@@ -13,30 +13,22 @@ function Formulario() {
     correo: ``
   })
 
-  const guardar = () => {
-
-
-    usuarios.data
-      .usuarios
-      .push({  nombre: "Juan ",
-      gustos: "Cualquier cosa ",
-      clave: "12345",
-      correo: "juan@gmail.com" })
-
-    // Save to file
-    usuarios.write()
-
-    console.log("guardar")
-
+  const guardar = (event) => { 
+    event.preventDefault();
+    const personas = JSON.parse(localStorage.getItem("persona")|| "{}");
+    if(personas[Relaciones.nombre]) {alert('ya Esta Registrado '); return;}
+   personas[Relaciones.nombre] = Relaciones;
+   localStorage.setItem("persona" , JSON.stringify(personas));
   }
 
 
   const registros = (event) => {
     console.log(event.target.value)
-    setDatos({
-      ...Relaciones,
-
-      [event.target.value]: event.target.value
+    setDatos(state => {
+      return {
+        ...state,
+        [event.target.name]: event.target.value
+      }
     })
 
   }
