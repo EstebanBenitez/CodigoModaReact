@@ -26,7 +26,7 @@ export const SearchGroup = () => {
             console.log(group)
             return navigate("/register");
         }else {
-            return alert("El grupo no existe, verifica que esté bien escrito o crealo")
+            return alert("El grupo no existe, verifica que est bien escrito o crealo")
         };
 
         
@@ -41,10 +41,9 @@ export const SearchGroup = () => {
             type="text"
             value={ inputValue }
             onChange={ onInputChange }
-            className="form-control w-75"
+            className="w-75 rounded"
             aria-label="Small"
             aria-describedby="Small"
-            placeholder="Nombre del grupo"
         />
         <br />
         <button onClick={ _ => onSubmit() } className="btn btn-secondary mt-3">Ingresar</button>

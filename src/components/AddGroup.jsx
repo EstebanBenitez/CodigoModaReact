@@ -1,8 +1,11 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom";
 
 export const AddGroup = () => {
 
     const [inputValue, setInputValue] = useState();
+    const navigate = useNavigate();
+
     
     const onInputChange = ( { target } ) => {
         // console.log( target.value );
@@ -18,6 +21,13 @@ export const AddGroup = () => {
         
         localStorage.setItem("grupo", JSON.stringify(grupos));
 
+        let grupo = grupos.includes (inputValue, 0)
+
+        if (grupo === true){
+            console.log(grupo)
+            return navigate("/register")
+        }
+
     }
     
     return (
@@ -30,7 +40,7 @@ export const AddGroup = () => {
             type="text"
             value= { inputValue } 
             onChange={ onInputChange }
-            className="form-control w-75"
+            className="w-75 rounded"
             aria-label="Small" 
             aria-describedby="Small"
         />

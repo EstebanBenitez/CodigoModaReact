@@ -4,7 +4,7 @@ import "../components/styles/Login.css";
 
 function Login() {
   
-    const [Relaciones,setDatos] =useState({
+    const [Relaciones, setDatos] =useState({
       
       clave:``,
       correo:``
