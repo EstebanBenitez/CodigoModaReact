@@ -30,10 +30,9 @@ export const AddGroup = () => {
             type="text"
             value= { inputValue } 
             onChange={ onInputChange }
-            className="form-control"
+            className="form-control w-75"
             aria-label="Small" 
             aria-describedby="Small"
-            class="w-75"
         />
         <br />
         <button  className="btn btn-secondary mt-3">Crear Grupo</button>
