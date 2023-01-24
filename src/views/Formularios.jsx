@@ -5,53 +5,47 @@ import React, { Fragment, useState } from 'react';
 
 
 function Formulario() {
+  const [relaciones, setDatos] = useState()
 
-  const [Relaciones, setDatos] = useState({
-    nombre: ``,
-    gustos: ``,
-    clave: ``,
-    correo: ``
-  })
 
-  const guardar = (event) => { 
-    event.preventDefault();
-    const personas = JSON.parse(localStorage.getItem("persona")|| "{}");
-    if(personas[Relaciones.nombre]) {alert('ya Esta Registrado '); return;}
-   personas[Relaciones.nombre] = Relaciones;
-   localStorage.setItem("persona" , JSON.stringify(personas));
+  const guardar = (event) => {
+    event.preventDefault()
+    let personas = JSON.parse(localStorage.getItem("personas") || "[]")
+
+    if (personas?.find(p => p.nombre === relaciones.email)) {
+      alert('Ya está registrado ');
+      return;
+    } else {
+      personas.push(relaciones)
+      console.log(personas)
+      localStorage.setItem("personas", JSON.stringify(personas))
+      
+    }
   }
 
-
-  const registros = (event) => {
-    console.log(event.target.value)
+  const handleChange = (event) => {
     setDatos(state => {
       return {
         ...state,
         [event.target.name]: event.target.value
       }
     })
-
   }
 
   return (
 
-    < form className="formulario">
+    <form onSubmit={guardar} className="formulario">
       <Fragment>
-
         <h1>Registrate</h1>
-
         <div className="contenedor">
-
           <div className='input-contenedor'>
             <input placeholder='Nombre'
               className='from-control'
               type="text"
               name="nombre"
-              onChange={registros}>
+              onChange={handleChange}>
             </input>
           </div>
-
-
 
           <div className="input-contenedor">
             <textarea
@@ -59,7 +53,7 @@ function Formulario() {
               className='from-control'
               type="text"
               name="gustos"
-              onChange={registros}>
+              onChange={handleChange}>
             </textarea>
           </div>
 
@@ -69,14 +63,9 @@ function Formulario() {
               className='from-control'
               name="clave"
               type="password"
-              onChange={registros} >
+              onChange={handleChange} >
             </input>
           </div>
-
-
-
-
-
 
           <div className="input-contenedor">
             <input
@@ -84,12 +73,12 @@ function Formulario() {
               className='from-control'
               type="email"
               name="email"
-              onChange={registros}>
+              onChange={handleChange}>
             </input>
           </div>
 
           <div className="d-grid gap-3 col-8 mx-auto">
-            <button onClick={guardar} className="btn btn-primary btn-">Registro <a href='/login'></a> </button>
+            <button type="submit" className="btn btn-primary btn-">Registro <a href='/login'></a> </button>
           </div>
 
 
@@ -97,9 +86,6 @@ function Formulario() {
             ¿ Ya Tienes Cuenta? &nbsp;
             <a href='/login'>Ingresar</a>
           </span>
-
-
-
 
         </div>
 
