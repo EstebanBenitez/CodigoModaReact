@@ -89,7 +89,7 @@ function Formulario() {
           </div>
 
           <div className="d-grid gap-3 col-8 mx-auto">
-            <button onClick={guardar} className="btn btn-primary btn-">Registro</button>
+            <button onClick={guardar} className="btn btn-primary btn-">Registro <a href='/login'></a> </button>
           </div>
 
 

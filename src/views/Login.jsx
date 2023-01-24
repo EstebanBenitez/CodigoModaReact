@@ -9,6 +9,12 @@ function Login() {
       clave:``,
       correo:``
     })
+
+
+
+    const session= (event)=>{ 
+
+    }
   
     const registros =(event)=>{
       console.log (event.target.value )
@@ -49,7 +55,7 @@ function Login() {
         
 
                   <div className="d-grid gap-3 col-8 mx-auto">
-                  <button className="btn btn-primary btn-">Ingresar</button>
+                  <button onClick={session} className="btn btn-primary btn-">Ingresar</button>
                   </div>
                   
 
