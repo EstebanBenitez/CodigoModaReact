@@ -10,10 +10,10 @@ const ItemMember = ({nombre, gustos}) => {
     
     <div class="card border-secondary mb-2" >
      <div class=" text-center">
-    <h4> <span class="badge bg-secondary d-grid gap-2">{nombre}</span></h4>
+    <h4> <span class="badge bg-secondary d-grid gap-2">{ nombre }</span></h4>
     </div>
      <div class="card-body text-secondary mb-4  ">
-           <p className="card-text">{gustos}</p>
+           <p className="card-text">{ gustos }</p>
      </div>
      </div>
 

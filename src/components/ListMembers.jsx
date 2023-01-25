@@ -1,39 +1,33 @@
+import { render } from '@testing-library/react';
 import React, { useState } from 'react';
-import data from '../data/Miembros.json';
+import { useEffect } from 'react';
 import ItemMember from './ItemMember';
 
 
-function  useMembers ()  {
+const ListMembers = () => {
   
-      const [miembros] = useState(data)
-
-      console.log(miembros);
+     const [nombre, setNombre] = useState("");
+     const [gustos, setGustos] = useState("");
+     
       
-      return miembros
-}
+      const personas = () => {
+            return localStorage.getItem(nombre, gustos)
+     }
 
 
-export default function ListMembers() {
-   const miembros = useMembers()
-   return (
-   
-    <>
+      useEffect(() => {
+            setNombre(personas());
+            setGustos(personas());
+      }, []);
 
-    
-
-
-        {
- 
-           miembros.map((item, i)  => {
-              return  <ItemMember key={i} {...item}/> 
-        })
-      }
-
- </>
-)
-   
+     const vista = () =>{
+      personas.render(<ItemMember />)
+     }
+     
    
 };
+
+export default ListMembers;
 
 
 
