@@ -78,7 +78,7 @@ function Formulario() {
           </div>
 
           <div className="d-grid gap-3 col-8 mx-auto">
-            <button type="submit" className="btn btn-primary btn-">Registro <a href='/login'></a> </button>
+            <button type="submit" className="btn btn-primary btn-">Registro </button>
           </div>
 
 

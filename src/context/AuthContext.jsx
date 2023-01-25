@@ -1,72 +1,72 @@
-import React, { createContext, Suspense, useLayoutEffect, useState, useCallback, useContext } from "react"
+import React, {createContext, Suspense, useCallback, useContext, useLayoutEffect, useState} from "react";
 
-export const AuthContext = React.createContext(null)
+export const AuthContext = React.createContext(null);
 
-export const useAuth = () => useContext(AuthContext)
+export const useAuth = () => useContext(AuthContext);
 
-export const AuthProvider = ({ children }) => {
-  const [loading, setLoading] = useState(true)
-  const [isAuthenticated, setIsAuthenticated] = useState(false)
-  const [user, setUser] = useState(undefined)
+export const AuthProvider = ({children}) => {
+    const [loading, setLoading] = useState(true);
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
+    const [user, setUser] = useState(undefined);
 
-  const refreshState = useCallback(async () => {
-    setLoading(true)
-    try {
-      const request = new Promise((resolve, reject) => {
-        const user = localStorage.getItem("userAuth") || ""
-        const users = JSON.parse(localStorage.getItem("personas") || "[]")
+    const refreshState = useCallback(async () => {
+        setLoading(true);
+        try {
+            const request = new Promise((resolve, reject) => {
+                const user = localStorage.getItem("userAuth") || "";
+                const users = JSON.parse(localStorage.getItem("personas") || "[]")
 
-        (user) ? resolve(users?.find(p => p.email === user)) : reject()
-      })
-    
-      request.then((user) => {
-        console.log(user)
-        setUser(user)
-        setIsAuthenticated(true)
-      })
+                (user) ? resolve(users?.find(p => p.email === user)) : reject();
+            });
 
-      request.catch((error) => {
-        setIsAuthenticated(false)
-      })
-      
-      setLoading(false)
-    } catch (err) {
-      setLoading(false)
-    }
-  }, [])
+            request
+                .then((user) => {
+                    console.log(user);
+                    setUser(user);
+                    setIsAuthenticated(true);
+                }).catch(() => {
+                setIsAuthenticated(false);
+            });
 
-  useLayoutEffect(() => {
-    refreshState()
-    return () => { }
-  }, [refreshState])
+            setLoading(false);
+        } catch (err) {
+            setLoading(false);
+        }
+    }, []);
 
-  const signOut = useCallback(() => {
-    localStorage.removeItem("userAuth")
-  }, [refreshState])
+    useLayoutEffect(() => {
+        refreshState();
+        return () => {
+        };
+    }, [refreshState]);
 
-  const signIn = useCallback((email) => {
-    localStorage.setItem("userAuth", email)
-    const users = JSON.parse(localStorage.getItem("personas") || "[]")
-    setUser(users?.find(u => u.email === email) || undefined)
-    setIsAuthenticated(true)
-  }, [refreshState])
+    const signOut = useCallback(() => {
+        localStorage.removeItem("userAuth");
+    }, [refreshState]);
 
-  return (
-    <Suspense fallback={"loading..."}>
-      <AuthContext.Provider
-        value={{
-          isAuthenticated,
-          loading,
-          user,
-          refreshState,
-          signOut,
-          signIn,
-        }}
-      >
-        {children}
-      </AuthContext.Provider>
-    </Suspense>
-  )
-}
+    const signIn = useCallback((email) => {
+        localStorage.setItem("userAuth", email);
+        const users = JSON.parse(localStorage.getItem("personas") || "[]");
+        setUser(users?.find(u => u.email === email) || undefined);
+        setIsAuthenticated(true);
+    }, [refreshState]);
 
-export const Authcontext = createContext()
+    return (
+        <Suspense fallback={"loading..."}>
+            <AuthContext.Provider
+                value={{
+                    isAuthenticated,
+                    loading,
+                    user,
+                    refreshState,
+                    signOut,
+                    signIn
+                }}
+            >
+                {children}
+            </AuthContext.Provider>
+        </Suspense>
+    );
+};
+
+export const Authcontext = createContext();

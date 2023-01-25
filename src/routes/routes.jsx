@@ -4,11 +4,11 @@ import {createBrowserRouter} from "react-router-dom";
  * Routes
  */
 
-import Home from "../views/Home"
-import Login from "../views/Login"
-import Miembros from "../views/Miembros"
-import MiembrosAdmin from "../views/MiembrosAdmin"
-import Formulario from "../views/Formularios"
+import Home from "../pages/Home"
+import Login from "../pages/Login"
+import Miembros from "../pages/Miembros"
+import MiembrosAdmin from "../pages/MiembrosAdmin"
+import Formulario from "../pages/Formularios"
 import { PrivateRoute } from "../components/PrivateRoute";
 
 const router = createBrowserRouter ([
