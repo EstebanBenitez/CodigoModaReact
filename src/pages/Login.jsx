@@ -17,13 +17,10 @@ const Login = () => {
     const handleSession = (event) => {
         event.preventDefault();
         const users = JSON.parse(localStorage.getItem("personas") || "[]");
-
         if (users && users?.find(u => u.email === relaciones.email && u.clave === relaciones.clave)) {
             signIn(users?.find(u => u.email === relaciones.email && u.clave === relaciones.clave)?.email || "");
-            navigate(`/miembrosadmin`);
+            navigate(`/miembros`);
         }
-        console.log(users);
-
         setError("Email o clave incorrectos");
     };
 

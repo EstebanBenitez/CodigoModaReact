@@ -1,23 +1,20 @@
-import {createBrowserRouter} from "react-router-dom";
+import {createBrowserRouter, Navigate} from "react-router-dom";
+import {PrivateRoute} from "../components/PrivateRoute";
 
 /**
  * Routes
  */
+import Groups from "../pages/Groups";
+import Login from "../pages/Login";
+import Miembros from "../pages/Miembros";
+import Register from "../pages/Register";
 
-import Home from "../pages/Home"
-import Login from "../pages/Login"
-import Miembros from "../pages/Miembros"
-import MiembrosAdmin from "../pages/MiembrosAdmin"
-import Formulario from "../pages/Formularios"
-import { PrivateRoute } from "../components/PrivateRoute";
-
-const router = createBrowserRouter ([
-    {path: "/home", element: <Home/>},
-    {path: "/", element: <Home/>},
+const router = createBrowserRouter([
+    {path: "/", element: <Navigate to="/login" replace={true}/>},
+    {path: "/groups", element: <PrivateRoute><Groups/></PrivateRoute>},
     {path: "/login", element: <Login/>},
-    {path: "/register", element: <Formulario/>},
-    {path: "/miembros", element: <Miembros/>},
-    {path: "/miembrosadmin", element: <PrivateRoute><MiembrosAdmin/></PrivateRoute>}
+    {path: "/register", element: <Register/>},
+    {path: "/miembros", element: <PrivateRoute><Miembros/></PrivateRoute>}
 ]);
 
 export default router;

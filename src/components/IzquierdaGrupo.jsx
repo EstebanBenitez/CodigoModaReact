@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container} from 'react-bootstrap';
 
-export const IzquierdaGrupo = () => {
+export default function IzquierdaGrupo() {
     return <Container className=" pt-4">
         <div className="info-header">
             <div className="fs-5 d-flex align-items-center gap-2 ">

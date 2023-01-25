@@ -1,33 +1,26 @@
-import React from "react";
-import {Container} from "react-bootstrap";
-import {Link} from "react-router-dom";
-import {IzquierdaGrupo} from "../components/IzquierdaGrupo";
+import BotonesGrupo from "../components/BotonesGrupo";
+import DerechaGrupo from "../components/DerechaGrupo";
+import IzquierdaGrupo from "../components/IzquierdaGrupo";
 import ListMembers from "../components/ListMembers";
+import SpecialDates from "../components/SpecialDatesAdmin";
 import "../components/styles/styles.css";
+import {useAuth} from "../context/AuthContext";
 
-function Miembros() {
-
+export const Miembros = () => {
+    const {user} = useAuth();
     return (
         <>
-            <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-                <Link to={"/"} className="btn btn-primary mt-3 px-5" type="button">Regresar</Link>
-            </div>
+            <BotonesGrupo/>
             <section id="pantalla-d-grupo">
                 <IzquierdaGrupo/>
+                {user.isAdmin && <DerechaGrupo/>}
             </section>
-            <ListMembers/>
-
-
-            <Container className="pt-4 fs-5 t ">
-
-                <h4>Fechas Especiales:</h4>
-                <div id="contenedor">
-                    <h5>Primera endulzada</h5>
-                    <p type="date" className="fecha">22 de diciembre </p>
-                </div>
-
-            </Container>
-
+            <section>
+                <ListMembers/>
+            </section>
+            <section>
+                {user.isAdmin && <SpecialDates/>}
+            </section>
         </>
     );
 };

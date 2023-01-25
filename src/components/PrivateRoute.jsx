@@ -1,19 +1,17 @@
-import { Navigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
+import {Navigate, useLocation} from 'react-router-dom';
+import {useAuth} from '../context/AuthContext';
 
 
+export {PrivateRoute};
 
-export { PrivateRoute };
-
-function PrivateRoute({ children }) {
-
-  const { isAuthenticated } = useAuth()
-  console.log(isAuthenticated)
-  if (!isAuthenticated) {
-    // not logged in so redirect to login page with the return url
-    return <Navigate to="/login" />
-  }
-
-  // authorized so return child components
-  return children;
+function PrivateRoute({children}) {
+    const location = useLocation();
+    const {isAuthenticated, user} = useAuth();
+    if (!isAuthenticated) {
+        return <Navigate to="/login"/>;
+    }
+    if (!user.group && location.pathname !== "/groups") {
+        return <Navigate to="/groups"/>;
+    }
+    return children;
 }
