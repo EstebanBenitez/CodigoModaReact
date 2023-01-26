@@ -1,4 +1,4 @@
-import React, {createContext, Suspense, useCallback, useContext, useLayoutEffect, useState} from "react";
+import React, {Suspense, useCallback, useContext, useLayoutEffect, useState} from "react";
 
 export const AuthContext = React.createContext(null);
 
@@ -27,7 +27,6 @@ export const AuthProvider = ({children}) => {
                 }).catch(() => {
                 setIsAuthenticated(false);
             });
-
             setLoading(false);
         } catch (err) {
             setLoading(false);
@@ -51,22 +50,13 @@ export const AuthProvider = ({children}) => {
         setIsAuthenticated(true);
     }, [refreshState]);
 
-    return (
-        <Suspense fallback={"loading..."}>
-            <AuthContext.Provider
-                value={{
-                    isAuthenticated,
-                    loading,
-                    user,
-                    refreshState,
-                    signOut,
-                    signIn
-                }}
-            >
-                {children}
-            </AuthContext.Provider>
-        </Suspense>
-    );
+    return (<Suspense fallback={"loading..."}>
+        <AuthContext.Provider
+            value={{
+                isAuthenticated, loading, user, refreshState, signOut, signIn
+            }}
+        >
+            {children}
+        </AuthContext.Provider>
+    </Suspense>);
 };
-
-export const Authcontext = createContext();
